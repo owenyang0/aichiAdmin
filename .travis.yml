@@ -11,7 +11,7 @@ install:
   - npm install
 
 script:
-  - npm run lint
+  # - npm run lint
   - npm run flow:check
   # - npm run test
   # - NODE_ENV=development npm run deploy
@@ -23,9 +23,9 @@ after_success:
 
 deploy:
   provider: heroku
+  skip_cleanup: true
   api_key:
     secure: ipO3/q0yzQf1+aejlRwCVtvckchc8xSTJfh8fe+yfCehz8VRc1AnWG881Ou34CGcNparu4URHIgq+hXpmbWDJGvOYHQz3ysl5LgujZQVIvmYoIKJ5+A7EwJ5E42StMXOltEFF3fmULFatGc7lkrL98YEbUCvZ997H4Wlci2iePbKz77enzFwR/GU5FzucMEfkmvGvURJihcpy7s3/biYYRl1cGwLolpX/eb2pBtMxBUPcSOuvkZUGNy8VGPDtEwcOlAfaLrh108NjYlPsyoUX0UjqqI9ASiggJ+/RQh7zZufccMg8DsbRI07JyJ5C6OI8FSOMDcO2pli0emOdQbQKUaIlN2ONd49QKMvCOBb6XGmVuuSurRmcm1zjRTJzWmhAGYJ2i4B6ULIfyQiFszwvwoGCeXIWmz5pzyGt0w7tuPssMcBX74JnOr2ioFSWdvAVuZr5T8bxzFRn3h0L0BYuDxW2ACxVYi/u1rziL3C9XJ5JR85rbeUY88Gsph53Iecepyf+xKI1SjIbqsKeCtyEhyTijZP1hLeLUuCfkPehGgL3OiNfovhRpCH+m9vxIFsiovUnBPUPIFAAKdXVelhfPpzBTvJv+s2f8zGZXrQDGLNVeAmTSM6049wCU7h+GOCJR5/hecHj84DLnLPJlQdW71yxDVB7EAgOEuyKrLn2KI=
   app: aichi
   on:
     repo: owenyang0/aichiAdmin
-    branch: test
