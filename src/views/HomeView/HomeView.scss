@@ -1,14 +1,27 @@
+.home {
+  padding: 150px 0;
+  text-align: center;
+}
+
+.hero__head {
+  font-size: 50px;
+  font-weight: 700;
+  color: #1D2228;
+  white-space: nowrap;
+  line-height: 1.25;
+}
+
+.hero__text {
+  font-size: 20px;
+  max-width: none;
+  margin-top: 30px;
+}
+
+.hero__btn--container {
+  padding: 60px 0;
+}
+
 .counter {
   font-weight: bold;
-}
-
-.counter--green {
-  composes: counter;
-  color: rgb(25,200,25);
-}
-
-.duck {
-  display: block;
-  width: 100%;
-  margin-top: 1.5rem;
+  padding: 10px;
 }
