@@ -233,7 +233,7 @@ webpackConfig.module.loaders.push({
 // Style Configuration
 // ------------------------------------
 webpackConfig.sassLoader = {
-  includePaths: paths.client('styles')
+  includePaths: [paths.base('node_modules'), paths.client('styles')]
 }
 
 webpackConfig.postcss = [

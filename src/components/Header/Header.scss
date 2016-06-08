@@ -1,0 +1,38 @@
+@import "utils";
+
+.inner {
+  @include cf();
+  
+  padding: 20px;
+}
+
+.logo {
+  float: left;
+  
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.nav {
+  float: right;
+}
+
+.menu {
+  margin: 0;
+
+  & > li {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  
+  a {
+    color: rgba(95, 108, 122, 0.5);
+
+    &:hover {
+      color: #338ddc;
+    }
+  }
+}
