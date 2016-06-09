@@ -16,11 +16,11 @@ const menus = [
     link: '/',
     name: 'Transaction'
   }, {
-    link: '/',
-    name: 'Docs'
+    link: 'https://travis-ci.org/owenyang0/aichiAdmin',
+    name: 'Travis'
   }, {
-    link: '/',
-    name: 'Help'
+    link: 'https://github.com/owenyang0/aichiAdmin',
+    name: 'Github'
   }
 ]
 
